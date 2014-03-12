@@ -1,0 +1,16 @@
+{
+  "name": "loading",
+  "version": "0.0.0",
+  "description": "loading.css - loading animations in CSS",
+  "main": "loading.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ville Immonen",
+  "license": "MIT",
+  "devDependencies": {
+    "rework-npm": "~0.6.1",
+    "autoprefixer": "~0.8.20131213",
+    "rework": "~0.20.2"
+  }
+}
