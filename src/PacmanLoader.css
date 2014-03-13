@@ -1,13 +1,13 @@
 .PacmanLoader {
   position: relative;
 }
-.PacmanLoader.is-loading:before,
-.PacmanLoader.is-loading:after,
+.PacmanLoader.is-loading::before,
+.PacmanLoader.is-loading::after,
 .PacmanLoader.is-loading .PacmanLoader-dot {
   display: inline-block;
 }
-.PacmanLoader:before,
-.PacmanLoader:after {
+.PacmanLoader::before,
+.PacmanLoader::after {
   content: "";
   position: absolute;
   display: none;
@@ -19,11 +19,11 @@
   border-radius: 50%;
   background-color: #f8ff00;
 }
-.PacmanLoader:before {
+.PacmanLoader::before {
   clip: rect(auto, auto, 13px, auto);
   animation: PacmanLoader-pac-eat linear .3s infinite alternate;
 }
-.PacmanLoader:after {
+.PacmanLoader::after {
   clip: rect(13px, auto, auto, auto);
   animation: PacmanLoader-man-eat linear .3s infinite alternate;
 }
@@ -48,7 +48,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform:rotate(-45deg);
+    transform: rotate(-45deg);
   }
 }
 @keyframes PacmanLoader-man-eat {
@@ -56,7 +56,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform:rotate(45deg);
+    transform: rotate(45deg);
   }
 }
 @keyframes PacmanLoader-dot-move {
